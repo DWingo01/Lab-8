@@ -1,13 +1,38 @@
 $main_color: #87835b;
 
 @mixin post {
-
+        font: .8em/1.5 "Helvetica Neue", Helvetica, arial, sans-serif;
+        color: #555;
+        
 }
 
-article
+
+/*LAYOUT*/
 
 h1, h2, h3, h4, h5, h6{
     color:$main_color;
+}
+
+
+/*MODULES*/
+
+.post{
+    padding-left:1em;
+    
+    .post-title{
+        @include post;
+        font-size:1.5rem;
+    
+    
+    }
+
+    .post-body{
+        @include post;
+    
+    
+    }
+
+
 }
 
 
